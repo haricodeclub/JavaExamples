@@ -1,8 +1,5 @@
 package one;
 
-import one.MyOuterClass.MyNestedStaticClass;
-import one.MyOuterClass.MyNonStaticNestedClass;
-
 public class MyStaticClass { 
 
 	public static void main(String[] args) {
