@@ -1,8 +1,8 @@
 package one;
 
-public interface Myinterface {
+public interface Myinterface extends MyInterfaceTwo,MyInterfaceThree{
 	
-	public  int method1();
+	public  int method1();//all methods are public
 	public void method2();
 	       void  method3();
 	
@@ -28,9 +28,17 @@ public interface Myinterface {
 		System.out.println("something is need to be coded here");
 		return null;
 	}
-	
-	int a=10;
+	 
+	int a=10;//defalut way
 	static int b=11;
-	public static final int c =12;
+	public static final int c =12;//by default public stati final
+	
+	
+	//from java 9
+	//private void method11();
+	//private static void method12() {
+	//}
+	
+	
 	
 }

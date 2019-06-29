@@ -1,8 +1,14 @@
 package one;
 
-public class MyClassToTest implements Myinterface{
+public class MyClassToTest extends MyThirdClassToTest implements Myinterface,MyInterfaceTwo{
 
-	public static void main(String[] args) {
+	public static void main(String[] name) {
+		
+		
+		
+		
+		
+		
 		
 		// TODO Auto-generated method stub
 		Myinterface.method4();//no object is needed
@@ -11,6 +17,7 @@ public class MyClassToTest implements Myinterface{
 		myClassToTestobject.method5();
 		System.out.println(Myinterface.a);
 		System.out.println(Myinterface.c);
+		
 		
 		//we can not call static methods by using objects of MyclassToTest
 		//we need to call static methods without obj as in line 8 ,
@@ -63,4 +70,34 @@ public class MyClassToTest implements Myinterface{
 		return 0;
 	}
 
-}
+	@Override
+	public void interfaceTwomethod1() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public int interfaceTwomethod2() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	//nested interface all 3 ways in a class declaration, not private possible
+	
+	interface MyNestedInterfaceInMyClassToTest
+	{
+		
+	}
+	public interface MyNestedInterfaceInMyClassToTest2
+	{
+		
+	}
+	
+	protected interface MyNestedInterfaceInMyClassToTest3
+	  {
+		  
+	  }
+	
+	//========================================================
+	
+	
+	}
