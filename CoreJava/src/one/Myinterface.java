@@ -2,12 +2,12 @@ package one;
 
 public interface Myinterface {
 	
-	public int method1();
+	public  int method1();
 	public void method2();
 	       void  method3();
 	
 	public static void method4() {
-		System.out.println("something is need to be coded here");
+		System.out.println("something is need to be coded here method 4");
 	}
 	
 	public static strictfp void method5() {
@@ -16,7 +16,7 @@ public interface Myinterface {
 	public abstract void method6();
 	//default is like = public static
 	default  int method7() {
-		System.out.println("something is need to be coded here");
+		System.out.println("something is need to be coded here method 7");
 		return 0;
 	}
 	
