@@ -8,8 +8,6 @@ public class MyClassToTest extends MyThirdClassToTest implements Myinterface,MyI
 		
 		
 		
-		
-		
 		// TODO Auto-generated method stub
 		Myinterface.method4();//no object is needed
 		MyClassToTest myClassToTestobject = new MyClassToTest();
@@ -24,7 +22,15 @@ public class MyClassToTest extends MyThirdClassToTest implements Myinterface,MyI
 		//so it doesnot allow to change static method code. 
 		//if you want to change you need to redefine it in class again
 		
-	
+		
+		
+		
+		//===========================
+		MySecondClassToTest.NestedMyInterfaceInMySecondClass variableOfMySecondClassToTestInNestedMyInterfaceInMySecondClass;
+		MyThirdClassToTest objectOfMyThirdClassToTest = new MyThirdClassToTest();
+		variableOfMySecondClassToTestInNestedMyInterfaceInMySecondClass = objectOfMyThirdClassToTest;
+		objectOfMyThirdClassToTest.methodInsideNestedMyInterfaceInMySecondClassToTest();
+		
 		
 	}
 

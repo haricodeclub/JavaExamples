@@ -25,10 +25,12 @@ class NestedInterfaceTest {
 	
 	public static void main(String[] args) {
 		
-		Test.Yes objectoftestdotyes;
+		Test.Yes variableoftestdotyes;
 		Testingtwo testingtwoclassobject=new Testingtwo();
-		objectoftestdotyes=testingtwoclassobject;
-		objectoftestdotyes.show();
+		variableoftestdotyes=testingtwoclassobject;
+		variableoftestdotyes.show();
+		testingtwoclassobject.show();
+		System.out.println(variableoftestdotyes+","+testingtwoclassobject);
 		
 	}
 
