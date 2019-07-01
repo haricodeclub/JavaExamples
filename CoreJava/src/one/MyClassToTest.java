@@ -1,10 +1,13 @@
 package one;
 
-public class MyClassToTest extends MyThirdClassToTest implements Myinterface,MyInterfaceTwo{
+import java.io.Serializable;
+
+public  class MyClassToTest  extends MyThirdClassToTest implements Myinterface,MyInterfaceTwo,Serializable{
 
 	public static void main(String[] name) {
 		
 		
+
 		
 		
 		
@@ -33,6 +36,11 @@ public class MyClassToTest extends MyThirdClassToTest implements Myinterface,MyI
 		
 		
 	}
+	
+	void methodInMyClassToTest1() {
+		System.out.println("method in myclasstoTest1");
+	}
+	
 
 	private void method5() {
 		// TODO Auto-generated method stub
