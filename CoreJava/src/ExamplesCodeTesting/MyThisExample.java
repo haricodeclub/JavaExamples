@@ -10,6 +10,8 @@ public class MyThisExample {
 		 // this(45,54); //intilization done in parametarised construtor
 		   a= 79; b= 78;
 		 System.out.println("this is defalut constructor");
+		 ExampleTestClass objectrefOfExampleTestClass = new ExampleTestClass(this);
+		 
 	}
 	 
 	 MyThisExample method()
@@ -48,6 +50,8 @@ public class MyThisExample {
 		MyThisExample objectrefFour = new MyThisExample();
 		objectrefFour.method3();
 		
+		MyThisExample objectrefFive = new MyThisExample();
+		
 		
 		
 		
@@ -61,6 +65,7 @@ public class MyThisExample {
 	{
 		int a=21;
 		int b=16;
+		this.method3();
 		System.out.println(this.a+ "                        " + a);
 		System.out.println(this.b +  "                       " +b);
 		System.out.println("global values -----local method values");
@@ -77,5 +82,24 @@ public class MyThisExample {
 	void method3()
 	{
 		method2(this);
+	}
+	void method4()
+	{
+		System.out.println("this code is in method 4"+" -------------------- "+a);
+	}
+	
+}
+
+
+class ExampleTestClass
+{
+	MyThisExample refrencevaribleInExampleClass;
+	
+	public ExampleTestClass(MyThisExample variable) {
+		// TODO Auto-generated constructor stub
+		
+		this.refrencevaribleInExampleClass=variable;
+		
+		refrencevaribleInExampleClass.method4();
 	}
 }
