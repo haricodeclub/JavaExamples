@@ -1,10 +1,18 @@
 package one;
 
 public  class ChildClass extends ParentClass implements Myinterface,MyInterfaceTwo,MyInterfaceThree{
+	
+	public static void main(String[] args) {
+		
+	}
+	
 
 	@Override
 	public void interfaceTwomethod1() {
 		// TODO Auto-generated method stub
+		ParentClass childclassobjectref= new ChildClass();
+		
+		 childclassobjectref = new ParentClass();
 		
 	}
 

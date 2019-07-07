@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.Serializable;
 
-public class MySecondClassToTest implements Serializable{
+public class MySecondClassToTest implements Serializable,Cloneable{
 	
 	public static void main(String[] args) throws InstantiationException, IllegalAccessException, ClassNotFoundException, CloneNotSupportedException, IOException  {
 		
@@ -16,33 +16,38 @@ public class MySecondClassToTest implements Serializable{
 		//#1
 			MySecondClassToTest Object1OfMySecondClassToTest = new MySecondClassToTest();
 			
+			Object1OfMySecondClassToTest.methodinMySecondClassToTest();
 			
 		//#2	
 		
 			MySecondClassToTest Object2ofMySecondClassToTest= (MySecondClassToTest) Class.forName("one.MySecondClassToTest").newInstance();
+			
+			Object2ofMySecondClassToTest.methodinMySecondClassToTest();
 		
 		//#3
-		//	MySecondClassToTest Object3ofMySecondClassToTest = (MySecondClassToTest) Object1OfMySecondClassToTest.clone();
+			MySecondClassToTest Object3ofMySecondClassToTest = (MySecondClassToTest) Object1OfMySecondClassToTest.clone();
 			
+			
+			Object3ofMySecondClassToTest.methodinMySecondClassToTest();
 			
 		//#4 object of MyClasstoTest	
-			MyClassToTest objectOfMyClassToTestInMySecondClass = null;
+			/*MyClassToTest variableOfMyClassToTestInMySecondClass = null;
 			
 			 
-			String filenamevariable="MyClassToTest.ser";
+			String filename="MyClassToTest";
 			
 			
-			FileInputStream FileObject4ofMySecondClassToTest = new FileInputStream(filenamevariable);
+			FileInputStream FileObject4ofMySecondClassToTest = new FileInputStream(filename);
 			
 			
 			ObjectInputStream Object4ofInputStream = new ObjectInputStream(FileObject4ofMySecondClassToTest);
 			
 			
-			objectOfMyClassToTestInMySecondClass  = (MyClassToTest) Object4ofInputStream.readObject();
+			variableOfMyClassToTestInMySecondClass  = (MyClassToTest) Object4ofInputStream.readObject();
 			
 			
-			objectOfMyClassToTestInMySecondClass.method9();
-			
+			variableOfMyClassToTestInMySecondClass.method9();
+			*/
 			
 			
 			
@@ -68,7 +73,7 @@ public class MySecondClassToTest implements Serializable{
 	
 	void  methodinMySecondClassToTest()
 	{
-		
+		System.out.println("code written in methodinMySecondClassToTest ");
 	}
 	
 	
