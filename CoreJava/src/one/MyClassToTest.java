@@ -6,8 +6,8 @@ public  class MyClassToTest  extends MyThirdClassToTest implements Myinterface,M
 
 	 static  public void main(String[] name) {
 		
-		
-
+		System.out.println(String.class.getClassLoader());
+		System.out.println(MyClassToTest.class.getClassLoader());
 		
 		
 		
