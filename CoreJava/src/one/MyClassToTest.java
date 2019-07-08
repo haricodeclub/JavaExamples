@@ -4,7 +4,7 @@ import java.io.Serializable;
 
 public  class MyClassToTest  extends MyThirdClassToTest implements Myinterface,MyInterfaceTwo,Serializable{
 
-	public static void main(String[] name) {
+	 static  public void main(String[] name) {
 		
 		
 
